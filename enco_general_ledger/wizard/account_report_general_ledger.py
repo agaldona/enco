@@ -19,9 +19,12 @@ class AccountReportGeneralLedger(models.TransientModel):
         if ('landscape' in data['form'] and not data['form']['landscape']):
             data['form'].pop('landscape')
         if self.not_show_counterpart:
-            landscape = data['form'].get('landscape', False)
-            return self.with_context(
-                landscape=landscape).env['report'].get_action(
-                self, 'enco_general_ledger.report_enco_generalledger',
+            res_ctx = res.get('context', self.env.context)
+            recs = self
+            if res_ctx.get('active_model') == 'account.account':
+                recs = self.env['account.account'].browse(
+                    res_ctx.get('active_ids'))
+            return self.with_context(res_ctx).env['report'].get_action(
+                recs, 'enco_general_ledger.report_enco_generalledger',
                 data=data)
         return res
