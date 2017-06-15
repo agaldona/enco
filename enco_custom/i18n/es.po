@@ -1,19 +1,13 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* enco_custom
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 8.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-16 09:57+0000\n"
-"PO-Revision-Date: 2017-05-16 12:00+0100\n"
-"Last-Translator: Esther Martín <esthermartin@avanzosc.es>\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ainara Galdona <ainaragaldona@avanzosc.es>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
 "X-Generator: Poedit 1.5.4\n"
 
 #. module: enco_custom
@@ -74,12 +68,12 @@ msgstr "Correo electrónico:"
 #. module: enco_custom
 #: model:ir.actions.report.xml,name:enco_custom.report_account_balance_reporting_default_non_zero
 msgid "Generic balance report (Custom non zero lines)"
-msgstr "Generic balance report (Custom non zero lines)"
+msgstr "Informe balance genérico (Customizado sin líneas a cero)"
 
 #. module: enco_custom
 #: model:ir.actions.report.xml,name:enco_custom.report_account_balance_reporting_generic
 msgid "Generic balance report (Custom)"
-msgstr "Generic balance report (Custom)"
+msgstr "Informe balance genérico (Customizado)"
 
 #. module: enco_custom
 #: view:website:hr_expense.report_expense
@@ -95,6 +89,11 @@ msgstr "IBAN"
 #: model:ir.model,name:enco_custom.model_account_move_line
 msgid "Journal Items"
 msgstr "Apuntes contables"
+
+#. module: enco_custom
+#: field:sale.order,mark_as_shipped:0
+msgid "Mark as shipped"
+msgstr "Marcar como entregado"
 
 #. module: enco_custom
 #: view:sale.order:enco_custom.sale_order_shipped_view_search
@@ -139,7 +138,7 @@ msgstr "Albarán transferido"
 #. module: enco_custom
 #: view:sale.order:enco_custom.sale_order_shipped_view_search
 msgid "Picking is not transferred"
-msgstr "El albarán aún no se ha transferido"
+msgstr "El albarán no se ha transferido"
 
 #. module: enco_custom
 #: view:account.move.line:enco_custom.account_move_line_min_view_search
@@ -155,6 +154,10 @@ msgstr "SWIFT"
 #: view:account.move.line:enco_custom.account_move_line_min_view_search
 msgid "Salesperson"
 msgstr "Comercial"
+
+#: model:ir.model,name:enco_custom.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
 
 #. module: enco_custom
 #: view:sale.order:enco_custom.sale_order_shipped_view_search
@@ -175,7 +178,7 @@ msgstr "Cheque sin recibir"
 #: view:website:report.external_layout_footer
 #: view:website:report.external_layout_header
 msgid "VAT:"
-msgstr "CIF:"
+msgstr "NIF:"
 
 #. module: enco_custom
 #: view:website:report.external_layout_footer
@@ -194,3 +197,16 @@ msgid ""
 msgstr ""
 "Sirve para indicar que se ha recibido un cheque en soporte papel, por "
 "ejemplo."
+
+#: view:website:enco_custom.report_generic_enco_non_zero
+msgid "enco_custom.report_generic_enco_non_zero"
+msgstr "enco_custom.report_generic_enco_non_zero"
+
+#. module: enco_custom
+#: view:website:enco_custom.report_generic_enco_non_zero
+msgid ""
+"o.line_ids.filtered(lambda x: x.current_value != 0.0 or x.previous_value != "
+"0.0)"
+msgstr ""
+"o.line_ids.filtered(lambda x: x.current_value != 0.0 or x.previous_value != "
+"0.0)"

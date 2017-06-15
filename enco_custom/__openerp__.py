@@ -26,9 +26,9 @@
         "report/report_paperformat.xml",
         "report/report_view.xml",
         "report/generic_balance_report.xml",
-        "views/sale_order_view.xml",
-        "views/res_partner_view.xml",
         "views/account_view.xml",
+        "views/sale_order_view.xml",
+        "views/res_partner_view.xml"
         ],
     "installable": True
 }
